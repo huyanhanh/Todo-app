@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+  background-image: linear-gradient(to bottom, #27b6c3, #3ae0fd);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  width:500px;
+  background-color: #fff;
+  font-family: 'Roboto',  sans-serif;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(136, 139, 139, 0.6);
+}
+
+.todo-app h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.todo-form {
+  display: flex;
+}
+
+.todo-input {
+  border: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #484040;
+  letter-spacing: 1px;
+}
+
+.btn {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(216, 39, 216);
+  display: flex;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 5px;
+}
+
+.todo-item {
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+}
+
+.todo-list {
+  margin-top: 30px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.todo-item-list {
+  flex: 1;
+  width: 90%;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.todo-delete > i{
+  font-size: 24px;
+  font-weight: 300;
+  color: #464545;
+  cursor: pointer;
+}
+
+.todo-delete > i:hover {
+  color: #000000;
+}
